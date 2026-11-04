@@ -54,3 +54,11 @@ Start the app in one terminal with `npm run dev`, then run `npm run smoke-test` 
 - TypeScript/TSX syntax transpilation was checked with the available TypeScript compiler.
 - The generation route was exercised with a local test harness: short brief returned HTTP 400; valid brief returned HTTP 200 in demo mode with checkout-specific output.
 - A full `npm install` and Next.js production build could not be completed in the current environment because npm registry DNS requests failed (`EAI_AGAIN`). Run `npm install` and `npm run build` in a network-enabled development environment before deployment.
+
+
+## Workspace enhancements (v0.3)
+
+- Click the profile name/avatar to edit the local display name and optional email.
+- Open **All projects** to create, reopen, and delete saved project briefs.
+- Use **Save as project** beneath a generated design direction to save the current brief.
+- Profile and project data are stored in browser localStorage for this MVP; there is no authentication, cloud sync, or shared multi-user database yet.
